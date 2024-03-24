@@ -268,7 +268,7 @@ class RenderMultiSliver extends RenderSliver
     }());
     final layoutExtent =
         max(0.0, min(layoutOffset, totalPaintExtent - minPaintOrigin));
-    print('maxScrollObstructionExtent: ${maxScrollObstructionExtent}');
+
     geometry = SliverGeometry(
       paintOrigin: minPaintOrigin,
       scrollExtent: scrollExtent,
