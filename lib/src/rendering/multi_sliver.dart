@@ -237,14 +237,14 @@ class RenderMultiSliver extends RenderSliver
 
     if (containing) {
       final allowedBounds = max(0.0, scrollExtent - constraints.scrollOffset);
-      if (maxPaintOffset > allowedBounds) {
-        _containPinnedSlivers(maxPaintOffset, allowedBounds, constraints.axis);
-        maxPaintOffset = allowedBounds;
-        layoutOffset = allowedBounds;
-        maxScrollObstructionExtent =
-            min(allowedBounds, maxScrollObstructionExtent);
-        print('gabella: ${allowedBounds}');
-      }
+      // if (maxPaintOffset > allowedBounds) {
+      //   _containPinnedSlivers(maxPaintOffset, allowedBounds, constraints.axis);
+      //   maxPaintOffset = allowedBounds;
+      //   layoutOffset = allowedBounds;
+      //   maxScrollObstructionExtent =
+      //       min(allowedBounds, maxScrollObstructionExtent);
+      //   print('gabella: ${allowedBounds}');
+      // }
       hasVisualOverflow = true;
     }
     minPaintOrigin ??= 0;
