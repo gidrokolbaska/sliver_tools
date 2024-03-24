@@ -243,6 +243,7 @@ class RenderMultiSliver extends RenderSliver
         layoutOffset = allowedBounds;
         maxScrollObstructionExtent =
             min(allowedBounds, maxScrollObstructionExtent);
+        print('gabella: ${allowedBounds}');
       }
       hasVisualOverflow = true;
     }
@@ -374,7 +375,6 @@ class RenderMultiSliver extends RenderSliver
         case Axis.vertical:
           childParentData.paintOffset =
               childParentData.paintOffset - Offset(0, diff);
-          print('gabell: ${childParentData.paintOffset}');
           break;
       }
     }
